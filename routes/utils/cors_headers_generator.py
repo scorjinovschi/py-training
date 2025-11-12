@@ -25,7 +25,7 @@ class CORSHeadersGenerator:
         if allow_headers is None:
             allow_headers = ["Content-Type", "Authorization"]
         if allow_origins is None:
-            allow_origins = ["http://localhost", "http://example.com"]
+            allow_origins = ["http://localhost"]
         if expose_headers is None:
             expose_headers = ["X-Custom-Header"]
         if max_age is None:
