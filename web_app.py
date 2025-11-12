@@ -4,6 +4,7 @@ from routes import chat_router, search_router
 from src import Logger, Config
 import uvicorn
 import asyncio
+from routes.utils import CORSHeadersGenerator
 
 
 class WebApp:
@@ -23,7 +24,8 @@ class WebApp:
             route_handlers=[chat_router, search_router],
             openapi_config=self.openapi_config,
             debug=self.config.get('debug'),
-            exception_handlers={Exception: self._runtime_exception_handler}
+            exception_handlers={Exception: self._runtime_exception_handler},
+            cors_config=CORSHeadersGenerator.generate_cors_headers()
         )
 
         self.logger.log('remote_methods', 'warning',
