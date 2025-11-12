@@ -1,0 +1,58 @@
+{
+    "success": {
+        "code": 200,
+        "message": "Successful result"
+    },
+    "created": {
+        "code": 201,
+        "message": "Resource successfully created"
+    },
+    "accepted": {
+        "code": 202,
+        "message": "Request accepted for processing"
+    },
+    "no_content": {
+        "code": 204,
+        "message": "No content to send for this request"
+    },
+    "bad_request": {
+        "code": 400,
+        "message": "Bad request due to invalid syntax"
+    },
+    "unauthorized": {
+        "code": 401,
+        "message": "Authentication is required and has failed"
+    },
+    "forbidden": {
+        "code": 403,
+        "message": "Server understood the request, but refuses to authorize it"
+    },
+    "not_found": {
+        "code": 404,
+        "message": "The requested resource could not be found"
+    },
+    "method_not_allowed": {
+        "code": 405,
+        "message": "Request method is not supported for the requested resource"
+    },
+    "conflict": {
+        "code": 409,
+        "message": "Request could not be processed because of conflict"
+    },
+    "internal_server_error": {
+        "code": 500,
+        "message": "An unexpected condition was encountered"
+    },
+    "not_implemented": {
+        "code": 501,
+        "message": "The server does not support the functionality required"
+    },
+    "bad_gateway": {
+        "code": 502,
+        "message": "Received an invalid response from the upstream server"
+    },
+    "service_unavailable": {
+        "code": 503,
+        "message": "The server is currently unable to handle the request"
+    }
+}

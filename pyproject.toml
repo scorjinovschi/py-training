@@ -1,0 +1,20 @@
+[project]
+name = "py-training"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "aioconsole>=0.8.2",
+    "chromadb>=1.3.4",
+    "dotenv>=0.9.9",
+    "litestar>=2.18.0",
+    "load-dotenv>=0.1.0",
+    "openai>=2.7.1",
+    "telnetlib3>=2.0.8",
+    "uvicorn>=0.38.0",
+]
+
+[tool.black]
+line-length = 79
+skip-string-normalization = true

@@ -1,0 +1,64 @@
+{
+    "version": 1,
+    "disable_existing_loggers": false,
+    "formatters": {
+        "standard": {
+            "format": "%(levelname)s - %(asctime)s - %(name)s - %(message)s"
+        }
+    },
+    "handlers": {
+        "console": {
+            "class": "logging.StreamHandler",
+            "formatter": "standard",
+            "level": "WARNING"
+        },
+        "file_handler": {
+            "class": "logging.FileHandler",
+            "formatter": "standard",
+            "level": "WARNING",
+            "filename": "app.log"
+        }
+    },
+    "loggers": {
+        "db_connector": {
+            "handlers": [
+                "console",
+                "file_handler"
+            ],
+            "level": "WARNING",
+            "propagate": false
+        },
+        "openai_connector": {
+            "handlers": [
+                "console",
+                "file_handler"
+            ],
+            "level": "WARNING",
+            "propagate": false
+        },
+        "remote_methods": {
+            "handlers": [
+                "console",
+                "file_handler"
+            ],
+            "level": "WARNING",
+            "propagate": false
+        },
+        "__main__": {
+            "handlers": [
+                "console",
+                "file_handler"
+            ],
+            "level": "WARNING",
+            "propagate": false
+        },
+        "ingest_console": {
+            "handlers": [
+                "console",
+                "file_handler"
+            ],
+            "level": "info",
+            "propagate": false
+        }
+    }
+}
